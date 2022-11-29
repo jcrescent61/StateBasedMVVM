@@ -13,9 +13,12 @@
 		9B274F092935D59D00A289AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B274F072935D59D00A289AC /* Main.storyboard */; };
 		9B274F0B2935D59D00A289AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B274F0A2935D59D00A289AC /* Assets.xcassets */; };
 		9B274F0E2935D59D00A289AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B274F0C2935D59D00A289AC /* LaunchScreen.storyboard */; };
-		9B274F192935D59D00A289AC /* StateBasedMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B274F182935D59D00A289AC /* StateBasedMVVMTests.swift */; };
-		9B274F232935D59D00A289AC /* StateBasedMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B274F222935D59D00A289AC /* StateBasedMVVMUITests.swift */; };
-		9B274F252935D59D00A289AC /* StateBasedMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B274F242935D59D00A289AC /* StateBasedMVVMUITestsLaunchTests.swift */; };
+		9B274F322935E38F00A289AC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B274F312935E38F00A289AC /* ViewModel.swift */; };
+		9B274F352935E3E600A289AC /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 9B274F342935E3E600A289AC /* RxBlocking */; };
+		9B274F372935E3E600A289AC /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9B274F362935E3E600A289AC /* RxCocoa */; };
+		9B274F392935E3E600A289AC /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 9B274F382935E3E600A289AC /* RxRelay */; };
+		9B274F3B2935E3E600A289AC /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9B274F3A2935E3E600A289AC /* RxSwift */; };
+		9B274F3D2935E48400A289AC /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B274F3C2935E48300A289AC /* Error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +48,9 @@
 		9B274F0D2935D59D00A289AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B274F0F2935D59D00A289AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B274F142935D59D00A289AC /* StateBasedMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateBasedMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B274F182935D59D00A289AC /* StateBasedMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateBasedMVVMTests.swift; sourceTree = "<group>"; };
 		9B274F1E2935D59D00A289AC /* StateBasedMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateBasedMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B274F222935D59D00A289AC /* StateBasedMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateBasedMVVMUITests.swift; sourceTree = "<group>"; };
-		9B274F242935D59D00A289AC /* StateBasedMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateBasedMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9B274F312935E38F00A289AC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9B274F3C2935E48300A289AC /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B274F392935E3E600A289AC /* RxRelay in Frameworks */,
+				9B274F372935E3E600A289AC /* RxCocoa in Frameworks */,
+				9B274F3B2935E3E600A289AC /* RxSwift in Frameworks */,
+				9B274F352935E3E600A289AC /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				9B274F002935D59D00A289AC /* StateBasedMVVM */,
-				9B274F172935D59D00A289AC /* StateBasedMVVMTests */,
-				9B274F212935D59D00A289AC /* StateBasedMVVMUITests */,
 				9B274EFF2935D59D00A289AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,29 +106,14 @@
 				9B274F012935D59D00A289AC /* AppDelegate.swift */,
 				9B274F032935D59D00A289AC /* SceneDelegate.swift */,
 				9B274F052935D59D00A289AC /* ViewController.swift */,
+				9B274F312935E38F00A289AC /* ViewModel.swift */,
+				9B274F3C2935E48300A289AC /* Error.swift */,
 				9B274F072935D59D00A289AC /* Main.storyboard */,
 				9B274F0A2935D59D00A289AC /* Assets.xcassets */,
 				9B274F0C2935D59D00A289AC /* LaunchScreen.storyboard */,
 				9B274F0F2935D59D00A289AC /* Info.plist */,
 			);
 			path = StateBasedMVVM;
-			sourceTree = "<group>";
-		};
-		9B274F172935D59D00A289AC /* StateBasedMVVMTests */ = {
-			isa = PBXGroup;
-			children = (
-				9B274F182935D59D00A289AC /* StateBasedMVVMTests.swift */,
-			);
-			path = StateBasedMVVMTests;
-			sourceTree = "<group>";
-		};
-		9B274F212935D59D00A289AC /* StateBasedMVVMUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9B274F222935D59D00A289AC /* StateBasedMVVMUITests.swift */,
-				9B274F242935D59D00A289AC /* StateBasedMVVMUITestsLaunchTests.swift */,
-			);
-			path = StateBasedMVVMUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +132,12 @@
 			dependencies = (
 			);
 			name = StateBasedMVVM;
+			packageProductDependencies = (
+				9B274F342935E3E600A289AC /* RxBlocking */,
+				9B274F362935E3E600A289AC /* RxCocoa */,
+				9B274F382935E3E600A289AC /* RxRelay */,
+				9B274F3A2935E3E600A289AC /* RxSwift */,
+			);
 			productName = StateBasedMVVM;
 			productReference = 9B274EFE2935D59D00A289AC /* StateBasedMVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +210,9 @@
 				Base,
 			);
 			mainGroup = 9B274EF52935D59D00A289AC;
+			packageReferences = (
+				9B274F332935E3E600A289AC /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 9B274EFF2935D59D00A289AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +258,8 @@
 			files = (
 				9B274F062935D59D00A289AC /* ViewController.swift in Sources */,
 				9B274F022935D59D00A289AC /* AppDelegate.swift in Sources */,
+				9B274F322935E38F00A289AC /* ViewModel.swift in Sources */,
+				9B274F3D2935E48400A289AC /* Error.swift in Sources */,
 				9B274F042935D59D00A289AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B274F192935D59D00A289AC /* StateBasedMVVMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B274F252935D59D00A289AC /* StateBasedMVVMUITestsLaunchTests.swift in Sources */,
-				9B274F232935D59D00A289AC /* StateBasedMVVMUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +442,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +452,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -473,6 +471,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,7 +481,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -602,6 +601,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9B274F332935E3E600A289AC /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B274F342935E3E600A289AC /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B274F332935E3E600A289AC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		9B274F362935E3E600A289AC /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B274F332935E3E600A289AC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		9B274F382935E3E600A289AC /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B274F332935E3E600A289AC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		9B274F3A2935E3E600A289AC /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B274F332935E3E600A289AC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9B274EF62935D59D00A289AC /* Project object */;
 }
